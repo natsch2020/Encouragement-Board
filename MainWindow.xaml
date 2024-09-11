@@ -1,0 +1,22 @@
+﻿<Window x:Class="Encouragement_Board.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Encouragement_Board"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="480" Width="900">
+    <Grid>
+        <DataGrid Name="Encouragement_Table" Margin="100,100,0,0" MaxWidth="450" HorizontalAlignment="Left" Width="350" Height="265" VerticalAlignment="Top" IsReadOnly="True" CanUserResizeRows="False" AutoGeneratingColumn="Encouragement_Table_AutoGeneratingColumn"/>
+        <Button Name="Add_ETime_Button" Content="Add Encouragement Time" HorizontalAlignment="Left" Margin="514,312,0,0" VerticalAlignment="Top" Click="Add_ETime_Button_Click"/>
+        <Button Name="Remove_R_Button" Content="Remove Receiver" HorizontalAlignment="Left" Margin="140,388,0,0" VerticalAlignment="Top" Click="Remove_R_Button_Click"/>
+        <DatePicker Name="Date_Picker" HorizontalAlignment="Left" Margin="514,185,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="514,100,0,0" TextWrapping="Wrap" Text="Receiver's Full Name:" VerticalAlignment="Top"/>
+        <TextBox Name="Receiver_Textbox" HorizontalAlignment="Left" Margin="514,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+        <TextBlock HorizontalAlignment="Left" Margin="514,164,0,0" TextWrapping="Wrap" Text="Date of Encouragement Time:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="514,234,0,0" TextWrapping="Wrap" Text="Encourager's Full Name:" VerticalAlignment="Top"/>
+        <TextBox Name="Encourager_Textbox" HorizontalAlignment="Left" Margin="514,255,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+        <Button Name="Delete_ETime_Button" Content="Delete Encouragement Time" HorizontalAlignment="Left" Margin="695,312,0,0" VerticalAlignment="Top" Click="Delete_ETime_Button_Click"/>
+        <Button Name="Clear_Counts_Button" Content="Clear Counts" HorizontalAlignment="Left" Margin="327,388,0,0" VerticalAlignment="Top" Click="Clear_Counts_Button_Click"/>
+    </Grid>
+</Window>
