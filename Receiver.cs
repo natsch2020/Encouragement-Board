@@ -56,7 +56,7 @@ namespace Encouragement_Board
             Number_Received += 1;
         }
 
-        public void Delete_ET(DateTime? date, Encourager encourager)
+        public void Delete_ET(DateTime? date)
         {
             Dates.Remove((DateTime)date);
             Number_Received -= 1;
